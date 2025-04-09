@@ -1,0 +1,7 @@
+{
+  "extends": "@typesaas/typescript-config/base.json",
+  "compilerOptions": {
+    "outDir": "../../build/schemas",
+  },
+  "include": ["src/**/*.ts"]
+}

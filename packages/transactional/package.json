@@ -1,0 +1,28 @@
+{
+  "name": "@typesaas/transactional",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "preview": "SKIP_ENV_CHECK=true dotenv -e ./.env -e ../../.env -- email dev --port=3005"
+  },
+  "exports": {
+    "./*": "./*.tsx"
+  },
+  "dependencies": {
+    "@auth/core": "0.38.0",
+    "@react-email/components": "^0.0.13",
+    "@react-email/render": "1.0.5",
+    "@react-email/tailwind": "^0.0.14",
+    "@typesaas/env": "*",
+    "next-auth": "4.24.7",
+    "nodemailer": "6.9.15",
+    "react": "18.3.1",
+    "react-email": "^1.2.0",
+    "tsup": "8.4.0"
+  },
+  "devDependencies": {
+    "@typesaas/typescript-config": "*",
+    "dotenv-cli": "8.0.0"
+  }
+}

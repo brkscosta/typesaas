@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "private": true,
+  "scripts": {
+    "postinstall": "turbo run db:generate",
+    "build": "turbo build --filter=api... --filter=frontend...",
+    "dev": "turbo dev --filter=api... --filter=frontend... --concurrency=11",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write",
+    "check-types": "turbo run check-types"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "turbo": "^2.4.4",
+    "typescript": "5.8.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

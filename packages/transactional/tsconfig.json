@@ -1,0 +1,7 @@
+{
+  "extends": "@typesaas/typescript-config/base.json",
+  "include": ["**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  }
+}
